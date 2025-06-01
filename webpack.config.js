@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isGitHubPages = env && env['gh-pages'];
-  const publicPath = isGitHubPages ? '/backlog-attachment-cleaner/v2/' : '/';
+  const publicPath = isGitHubPages ? '/backlog-attachment-cleaner-v2/' : '/';
   
   return {
     entry: './src/index.tsx',

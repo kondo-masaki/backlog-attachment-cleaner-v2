@@ -9,7 +9,7 @@
     "build:gh-pages": "webpack --mode production --env gh-pages",
     "dev": "webpack serve --mode development --open"
   },
-  "homepage": "https://kondo-masaki.github.io/backlog-attachment-cleaner-v2/",
+  "homepage": "https://kondo-masaki.github.io/backlog-attachment-cleaner-v2",
   "dependencies": {
     "@chakra-ui/react": "^2.10.2",
     "@emotion/react": "^11.11.1",
