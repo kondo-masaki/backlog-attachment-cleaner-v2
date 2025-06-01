@@ -46,4 +46,10 @@ jobs:
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           
           # Push changes
-          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" || echo "No changes to push" 
+          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" || echo "No changes to push"
+
+      - name: Verify deployment
+        run: |
+          echo "Waiting for deployment to complete..."
+          sleep 30
+          curl -f https://kondo-masaki.github.io/backlog-attachment-cleaner-v2/ || echo "Deployment verification failed" 
