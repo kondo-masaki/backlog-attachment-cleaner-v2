@@ -1,0 +1,48 @@
+{
+  "name": "backlog-attachment-cleaner",
+  "version": "2.0.0",
+  "description": "A web application to bulk delete attachments from Backlog issues",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "build:gh-pages": "webpack --mode production --env gh-pages",
+    "dev": "webpack serve --mode development --open"
+  },
+  "homepage": "https://kondo-masaki.github.io/backlog-attachment-cleaner-v2/",
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "axios": "^1.6.0",
+    "framer-motion": "^10.12.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-react": "^7.22.0",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "keywords": [
+    "backlog",
+    "react",
+    "attachment-cleaner",
+    "file-management",
+    "bulk-delete"
+  ],
+  "author": "",
+  "license": "MIT"
+}
